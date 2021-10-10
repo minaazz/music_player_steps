@@ -44,7 +44,7 @@ figure {
     top: 150%;
     margin-left: -10vw;
     margin-top: -32vh;
-    border: 1px solid aqua; }
+    transition: 1s; }
     figure section article {
       position: absolute;
       top: 0;
@@ -58,7 +58,12 @@ figure {
         padding: 5vh 2.5vw 8vh;
         border-radius: 10px;
         box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.1);
-        opacity: .6; }
+        opacity: .6;
+        transform: scale(0.8);
+        transition: .5s; }
+      figure section article.on .inner {
+        opacity: .9;
+        transform: scale(1.1); }
   figure .btnPrev {
     width: 60px;
     height: 60px;

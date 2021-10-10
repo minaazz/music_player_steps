@@ -7,7 +7,7 @@
         top:150%;
         margin-left:-10vw;
         margin-top:-32vh;
-        border:1px solid aqua;
+        transition: 1s;
 
         article {
             position:absolute;
@@ -24,6 +24,15 @@
                 border-radius:10px;
                 box-shadow:10px 10px 20px rgba(0,0,0,.1);
                 opacity:.6;
+                transform:scale(.8);
+                transition:.5s;
+            }
+
+            &.on {
+                .inner {
+                    opacity:.9;
+                    transform:scale(1.1);
+                }
             }
         }
     }
