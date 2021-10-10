@@ -59,6 +59,104 @@ figure {
         border-radius: 10px;
         box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.1);
         opacity: .6; }
+  figure .btnPrev {
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-20vw, -50%);
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    cursor: pointer;
+    font-size: 0;
+    padding-left: 20px; }
+    figure .btnPrev span {
+      font: 11px/1 "aria";
+      color: #fff;
+      opacity: 1;
+      transition: .5s; }
+    figure .btnPrev:before {
+      content: '';
+      display: block;
+      width: 100%;
+      height: 1px;
+      background: #fff;
+      position: absolute;
+      top: 50%;
+      left: 0;
+      transform-origin: left center;
+      transform: rotate(-180deg);
+      transition: .5s; }
+    figure .btnPrev:after {
+      content: '';
+      display: block;
+      width: 100%;
+      height: 1px;
+      background: #fff;
+      position: absolute;
+      top: 50%;
+      left: 0;
+      transform-origin: left center;
+      transform: rotate(180deg);
+      transition: .5s; }
+    figure .btnPrev:hover span {
+      transform: translateX(100%);
+      opacity: 0; }
+    figure .btnPrev:hover:before {
+      transform: rotate(-30deg); }
+    figure .btnPrev:hover:after {
+      transform: rotate(30deg); }
+  figure .btnNext {
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translate(20vw, -50%);
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    cursor: pointer;
+    font-size: 0;
+    padding-left: 20px; }
+    figure .btnNext span {
+      font: 11px/1 "aria";
+      color: #fff;
+      opacity: 1;
+      transition: .5s; }
+    figure .btnNext:before {
+      content: '';
+      display: block;
+      width: 100%;
+      height: 1px;
+      background: #fff;
+      position: absolute;
+      top: 50%;
+      right: 0;
+      transform-origin: right center;
+      transform: rotate(-180deg);
+      transition: .5s; }
+    figure .btnNext:after {
+      content: '';
+      display: block;
+      width: 100%;
+      height: 1px;
+      background: #fff;
+      position: absolute;
+      top: 50%;
+      right: 0;
+      transform-origin: right center;
+      transform: rotate(180deg);
+      transition: .5s; }
+    figure .btnNext:hover span {
+      transform: translateX(-100%);
+      opacity: 0; }
+    figure .btnNext:hover:before {
+      transform: rotate(-30deg); }
+    figure .btnNext:hover:after {
+      transform: rotate(30deg); }
   figure > p {
     position: absolute;
     bottom: 7vh;
